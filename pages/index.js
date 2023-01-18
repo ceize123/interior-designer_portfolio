@@ -32,52 +32,53 @@ export default function Home() {
 						<h2>EDU.</h2>
 						<div>
 							<div>
-								<h4></h4>
-								<p></p>
-								<p></p>
+								<h4>INTERIOR DECORATING</h4>
+								<p>HUMBER COLLEGE</p>
+								<p>EXPECTED 2023</p>
 							</div>	
 							<div>
-								<h4></h4>
-								<p></p>
-								<p></p>
+								<h4>GRAPHIC COMMUNICATIONS</h4>
+								<p>SHIH_HSUIN UNIVERSITY</p>
+								<p>2014-2018</p>
 							</div>	
 						</div>
 					</div>
 					<div>
 						<h2>SKILLS</h2>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li>Adobe Illustrator</li>
+							<li>Adobe Photoshop</li>
+							<li>Auto Cad</li>
+							<li>Sketchup</li>
 						</ul>	
 					</div>
 					<div>
 						<h2>LANG.</h2>
 						<ul>
-							<li></li>
-							<li></li>
+							<li>English</li>
+							<li>Mandarin</li>
 						</ul>		
 					</div>
 					<div>
 						<h2>EXPERIENCE</h2>
 						<div>
 							<div>
-								<h4></h4>	
-								<p></p>	
+								<h4>SET DECORATOR ASSISTANT</h4>	
+								<p>Freelance, Taiwan   2015-2019</p>	
 								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
+									<li>Designed and decorated sets and set elements for advertising,music video and film</li>
+									<li>Created Sketchup models and 3D realistic renderings for clients to be able to visualize the space</li>
+									<li>Sourced many products such as lighting, furniture, and fabrics for many different budgets and sciences</li>
 								</ul>	
 							</div>
 							<div>
-								<h4></h4>	
-								<p></p>	
+								<h4>DISPLAY DESIGNER</h4>	
+								<p>Penshugen, Taiwan   2019-2021</p>	
 								<ul>
-									<li></li>
-									<li></li>
-									<li></li>
+									<li>Worked extensively with clients and vendors throughout the design process</li>
+									<li>Created display sets using minor carpentry skills</li>
+									<li>Contributed CAD drawings of each set and drafted detailed dimensional drawings for a scene shop to build from</li>
+									<li>Created necessary design, documentation, and management of</li>
 								</ul>	
 							</div>
 						</div>	
