@@ -2,15 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+	background-color: gray;
+	color: white;
+}
+
 .layout {
 	width: 100vw;
 	max-width: 1280px;
 	margin: auto;
 }
 
-nav {
-	.icon {
-		width: 36px;
-		height: 36px;
+// Nav bar starts
+header {
+	max-width: 1280px;
+	nav {
+		.icon {
+			width: 36px;
+			height: 36px;
+		}
 	}
 }
+// Nav bar ends
+
+// Main starts
+.hero-section {
+
+	button {
+		z-index: 1;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 7px;
+			left: 5px;
+			background-color: #eeee44;
+			width: 110%;
+			height: 70%;
+			z-index: -1;
+		}
+	}
+}
+// Main ends
