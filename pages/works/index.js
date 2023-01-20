@@ -1,4 +1,5 @@
 import { createClient } from 'contentful'
+import Card from '../../components/Card'
 
 export async function getStaticProps() {
 	const client = createClient({
@@ -19,9 +20,17 @@ export default function Works({ works }) {
 	console.log(works)
 	return (
 	<>
-		<main>
-			<section>
-				123
+		<main className='mt-20'>
+			<section className='work-section'>
+				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-8 sm:mx-4 mx-8'>
+					{works.map((work) => {
+						return (
+							<div key={work.sys.id}>
+								<Card work={work.fields} />
+							</div>
+						)
+					})}
+				</div>	
 			</section>
 		</main>
 	</>
