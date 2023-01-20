@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import rabbit from '../public/rabbit.png'
-import { MdPhoneIphone, MdEmail, MdLocationOn } from 'react-icons/Md';
+import { MdPhoneIphone, MdEmail, MdLocationOn } from 'react-icons/md';
 
 export default function Home() {
 	return (

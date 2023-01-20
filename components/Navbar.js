@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IoLogoLinkedin } from 'react-icons/Io';
+import { IoLogoLinkedin } from 'react-icons/io';
 import { AiOutlineInstagram } from 'react-icons/ai';
 
 export default function Navbar() {
