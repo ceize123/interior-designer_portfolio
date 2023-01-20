@@ -34,4 +34,9 @@ header nav .icon {
   z-index: -1;
 }
 
+.work-section .work-card {
+  height: 0;
+  padding-bottom: 100%;
+}
+
 /*# sourceMappingURL=globals.css.map */

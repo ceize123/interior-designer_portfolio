@@ -27,7 +27,6 @@ header {
 
 // Main starts
 .hero-section {
-
 	button {
 		z-index: 1;
 		&::after {
@@ -43,3 +42,11 @@ header {
 	}
 }
 // Main ends
+
+// Work page
+.work-section {
+	.work-card {
+		height: 0;
+		padding-bottom: 100%;
+	}
+}
