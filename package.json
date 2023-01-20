@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "@next/font": "13.1.1",
     "autoprefixer": "^10.4.13",
     "contentful": "^9.2.17",
