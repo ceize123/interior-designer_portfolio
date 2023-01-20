@@ -12,13 +12,13 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className='flex items-center'>
-					<Link href='/'>
-						<h1 className='mr-5'>ABOUT</h1>
+					<Link className='mr-5' href='/'>
+						<h1 >ABOUT</h1>
 					</Link>
-					<Link href='/works'>
-						<h1 className='mr-5'>WORK</h1>
+					<Link className='mr-5' href='/works'>
+						<h1>WORK</h1>
 					</Link>
-					<Link href='/'>
+					<Link className='mr-2' href='/'>
 						<IoLogoLinkedin className='icon'/>
 					</Link>
 					<Link href='/'>

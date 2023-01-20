@@ -22,7 +22,7 @@ export default function Works({ works }) {
 	<>
 		<main className='mt-20'>
 			<section className='work-section'>
-				<div className='grid grid-cols-3 gap-8 mx-3'>
+				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-8 sm:mx-4 mx-8'>
 					{works.map((work) => {
 						return (
 							<div key={work.sys.id}>

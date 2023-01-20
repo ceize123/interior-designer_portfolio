@@ -9,7 +9,8 @@ export default function Card({ work }) {
 				background: `url(https:${thumbnail.fields.file.url}) 
 				no-repeat center center / cover `}}
 			>
-					<div className={`text-black text-5xl absolute ${strings.length > 1 ? 'bottom-8' : 'bottom-20'} pl-5`}>
+				{/* ${strings.length > 1 ? 'sm:bottom-8 bottom-3' : 'sm:bottom-20 bottom-10'}  */}
+				<div className={`text-black lg:text-5xl text-4xl absolute pl-5 sm:bottom-7 bottom-3`}>
 						{strings.map((str, index) => {
 							return <p key={index}>{str}</p>
 						})}
