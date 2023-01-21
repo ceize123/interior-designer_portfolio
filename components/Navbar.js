@@ -12,7 +12,7 @@ export default function Navbar() {
 					</Link>
 				</div>
 				<div className='flex items-center'>
-					<Link className='mr-5' href='/'>
+					<Link className='mr-5' href='/#about-section'>
 						<h1 >ABOUT</h1>
 					</Link>
 					<Link className='mr-5' href='/works'>
