@@ -12,7 +12,7 @@ export default function Card({ work }) {
 				{/* ${strings.length > 1 ? 'sm:bottom-8 bottom-3' : 'sm:bottom-20 bottom-10'}  */}
 				<div className={`text-black lg:text-5xl text-4xl absolute pl-5 sm:bottom-7 bottom-3`}>
 						{strings.map((str, index) => {
-							return <p key={index}>{str}</p>
+							return <h2 key={index}>{str}</h2>
 						})}
 					</div>
 			</div>

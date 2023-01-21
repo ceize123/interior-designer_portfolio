@@ -8,7 +8,11 @@ export default function Home() {
 	<>
 		<section className='hero-section h-screen relative flex flex-col justify-center'>
 			<div>
-				<h1 className='lg:text-8xl md:text-6xl sm:text-4xl text-3xl bg-pink inline pr-5 sm:ml-20 ml-8'>INTERIOR.FURNITURE</h1>
+					<h1 className='xl:text-8xl lg:text-7xl sm:text-4xl text-3xl 
+								bg-pink inline pr-5 sm:ml-20 ml-8 tracking-wider'
+					>
+						INTERIOR.FURNITURE
+					</h1>
 			</div>
 			<div className='mt-14'>
 				<div className='text-center'>
@@ -22,16 +26,16 @@ export default function Home() {
 		</section>
 		<main>
 			<section className='md:text-5xl sm:text-3xl text-2xl md:mx-16 mx-5 leading-normal h-screen flex items-center'>
-				<div>
-					<h4>
+				<div className='leading-normal'>
+					<h3>
 						I focus on using effectively optimize the space to improving people's everyday lives in all aspects.
-					</h4>
-					<h4>
+					</h3>
+					<h3>
 						Use the power of interior design to evokes happiness and soothes the soul that help people live better.	
-					</h4>
+					</h3>
 				</div>	
 			</section>	
-			<section className='py-10' id='about-section'>
+			<section className='py-10 about-section' id='about-section'>
 				<div className='flex flex-col items-center'>
 					<Image src={rabbit}
 							width={100}
@@ -58,14 +62,18 @@ export default function Home() {
 							<h2 className='text-yellow md:text-6xl text-4xl'>EDU.</h2>
 							<div>
 								<div className='my-5'>
-									<h4 className='font-bold'>INTERIOR DECORATING</h4>
-									<p>HUMBER COLLEGE</p>
-									<p>EXPECTED 2023</p>
-								</div>	
+									<h4>INTERIOR DECORATING</h4>
+									<ul>
+										<li>HUMBER COLLEGE</li>
+										<li>EXPECTED 2023</li>
+									</ul>	
+								</div>
 								<div>
-									<h4 className='font-bold'>GRAPHIC COMMUNICATIONS</h4>
-									<p>SHIH_HSUIN UNIVERSITY</p>
-									<p>2014-2018</p>
+									<h4>GRAPHIC COMMUNICATIONS</h4>
+									<ul>
+										<li>SHIH_HSUIN UNIVERSITY</li>
+										<li>2014-2018</li>
+									</ul>	
 								</div>	
 							</div>
 						</div>
@@ -91,8 +99,8 @@ export default function Home() {
 						<div className='flex flex-col sm:flex-row'>
 							<div className='mr-12'>
 								<div className='my-5'>
-									<h4 className='font-bold'>SET DECORATOR ASSISTANT</h4>	
-									<p className='font-bold'>Freelance, Taiwan 2015-2019</p>	
+									<h4>SET DECORATOR ASSISTANT</h4>	
+									<h4>Freelance, Taiwan 2015-2019</h4>	
 								</div>	
 								<ul className='list-disc'>
 									<li>Designed and decorated sets and set elements for advertising,music video and film</li>
@@ -102,8 +110,8 @@ export default function Home() {
 							</div>
 							<div className='mr-12'>
 								<div className='my-5'>
-									<h4 className='font-bold'>DISPLAY DESIGNER</h4>	
-									<p className='font-bold'>Penshugen, Taiwan   2019-2021</p>	
+									<h4>DISPLAY DESIGNER</h4>	
+									<h4>Penshugen, Taiwan   2019-2021</h4>	
 								</div>	
 								<ul className='list-disc'>
 									<li>Worked extensively with clients and vendors throughout the design process</li>
