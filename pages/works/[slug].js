@@ -1,5 +1,6 @@
 import { createClient } from 'contentful'
 import Image from 'next/image'
+import Skeleton from '../../components/Skeleton'
 
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE_ID, // id
@@ -20,7 +21,7 @@ export const getStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: false
+		fallback: true
 	}
 }
 
@@ -38,6 +39,8 @@ export async function getStaticProps({params}) {
 }
 
 export default function WorkDetails({ work }) {
+	if (!work) return <Skeleton />
+
 	const { title, thumbnail } = work.fields
 	console.log(work)
 	return (
