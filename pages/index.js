@@ -31,7 +31,7 @@ export default function Home() {
 					</h4>
 				</div>	
 			</section>	
-			<section className='my-10'>
+			<section className='py-10' id='about-section'>
 				<div className='flex flex-col items-center'>
 					<Image src={rabbit}
 							width={100}
