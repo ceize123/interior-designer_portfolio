@@ -1,6 +1,6 @@
 export default function Skeleton() {
 	return (
-		<div className="skeleton mt-20">
+		<div className="skeleton mt-20 mx-auto">
 			<div className='s-banner'></div>
 			<div className='s-header'></div>
 			<div className='s-content'></div>
@@ -10,7 +10,6 @@ export default function Skeleton() {
 			<style jsx>{`
 				.skeleton {
 					max-width: 1200px;
-					margin: 20px auto;
 				}
 
 				.skeleton > div {
