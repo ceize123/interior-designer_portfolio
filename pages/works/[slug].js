@@ -32,7 +32,8 @@ export async function getStaticProps({params}) {
 	})
 
 	return {
-		props: {work: items[0]}
+		props: { work: items[0] },
+		revalidate: 10
 	}
 }
 
