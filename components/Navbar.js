@@ -11,20 +11,24 @@ export default function Navbar() {
 						<h1>ANN TSENG</h1>
 					</Link>
 				</div>
-				<div className='flex items-center'>
+				<ul className='flex items-center'>
 					<Link className='mr-5' href='/#about-section'>
-						<h1 >ABOUT</h1>
+						<li>ABOUT</li>
 					</Link>
 					<Link className='mr-5' href='/works'>
-						<h1>WORK</h1>
+						<li>WORK</li>
 					</Link>
 					<Link className='mr-2' href='/'>
-						<IoLogoLinkedin className='icon'/>
+						<li>
+							<IoLogoLinkedin className='icon'/>
+						</li>
 					</Link>
 					<Link href='/'>
-						<AiOutlineInstagram className='icon'/>
+						<li>
+							<AiOutlineInstagram className='icon'/>
+						</li>
 					</Link>
-				</div>
+				</ul>
 			</nav>
 		</header>
 	)
