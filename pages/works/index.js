@@ -12,7 +12,8 @@ export async function getStaticProps() {
 	return {
 		props: {
 			works: res.items
-		}
+		},
+		revalidate: 10
 	}
 }
 
