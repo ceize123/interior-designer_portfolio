@@ -7,7 +7,9 @@ theme: {
 		'pink': '#f4cccc',
 		'yellow': '#eeee44',
 		'black': '#000',
-		'gray': '#222'
+		'gray': '#222',
+		'light-gray': '#555',
+		'white': '#fff'
 	},	  
 	extend: {},
   },

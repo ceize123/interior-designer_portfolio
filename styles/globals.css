@@ -3,15 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 html, body {
-  background-color: gray;
-  color: white;
   scroll-behavior: smooth;
-}
-
-.layout {
-  width: 100vw;
-  max-width: 1280px;
-  margin: auto;
 }
 
 h1, h2 {
