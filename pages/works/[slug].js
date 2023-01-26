@@ -53,7 +53,7 @@ export default function WorkDetails({ work }) {
 	const { title, thumbnail } = work.fields
 	console.log(work)
 	return (
-	<main className='mt-20'>
+	<main className='mt-14 border-x-2 border-light-gray'>
 		<p>{title}</p>
 		<Image
 			src={`https:${thumbnail.fields.file.url}`}

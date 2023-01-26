@@ -12,7 +12,9 @@ export default function App({ Component, pageProps }) {
 			<Navbar />
 			<div className='container mx-auto'>
 				<Component {...pageProps} />
-				<div className='flex justify-end pr-4 py-6 text-gray'>
+				<div className={`flex justify-end pr-4 py-6 text-gray 
+					${router.route !== '/' ? 'border-x-2 border-light-gray' : ''}`}
+				>
 					<Links />
 				</div>
 			</div>

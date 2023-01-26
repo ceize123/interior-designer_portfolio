@@ -21,8 +21,8 @@ export default function Works({ works }) {
 	console.log(works)
 	return (
 	<>
-		<main className='mt-20'>
-			<section className='work-section my-5'>
+		<main className='mt-14 border-x-2 border-light-gray'>
+			<section className='work-section py-5'>
 				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-8 sm:mx-4 mx-8'>
 					{works.map((work) => {
 						return (
