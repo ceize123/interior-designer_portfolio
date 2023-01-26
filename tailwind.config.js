@@ -6,7 +6,8 @@ theme: {
 	colors: {
 		'pink': '#f4cccc',
 		'yellow': '#eeee44',
-		'black': '#000'
+		'black': '#000',
+		'gray': '#222'
 	},	  
 	extend: {},
   },
