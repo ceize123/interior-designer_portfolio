@@ -1,5 +1,6 @@
 import { createClient } from 'contentful'
 import Card from '../../components/Card'
+import Skeleton from '../../components/Skeleton'
 
 export async function getStaticProps() {
 	const client = createClient({
@@ -18,6 +19,7 @@ export async function getStaticProps() {
 }
 
 export default function Works({ works }) {
+	if (!works) return <Skeleton />
 	console.log(works)
 	return (
 	<>
