@@ -5,7 +5,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 export default function Links() {
 	return (
 		<ul className='flex items-center'>
-			<Link className='mr-5' href='/#about-section'>
+			<Link className='mr-5' href='/#about-section' scroll={false}>
 				<li>ABOUT</li>
 			</Link>
 			<Link className='mr-5' href='/works'>
