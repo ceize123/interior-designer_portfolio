@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Lexend+Exa:wght@500&family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Lexend+Exa:wght@500&family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap');
 
 // General starts
 html, body {
 	background-color: gray;
 	color: white;
+	scroll-behavior: smooth;
 }
 
 .layout {
@@ -18,6 +19,7 @@ html, body {
 // font
 h1, h2 {
 	font-family: 'Bodoni Moda', serif;
+	font-weight: 500;
 }
 
 span, header li, .about-section li {
@@ -35,11 +37,10 @@ h4 {
 	font-weight: 600;
 }
 
-.work-section h2 {
+.work-section span {
 	font-family: 'Lexend Exa', sans-serif;
 	font-weight: 500;
 }
-
 // font
 
 // General ends
@@ -62,13 +63,19 @@ header {
 		z-index: 1;
 		&::after {
 			content: "";
+			transition: all .2s ease-in-out;
 			position: absolute;
 			top: 7px;
 			left: 5px;
 			background-color: #eeee44;
-			width: 110%;
+			width: 100%;
 			height: 70%;
 			z-index: -1;
+			
+		}
+		&:hover::after {
+			top: 4px;
+			left: 0;
 		}
 	}
 }
@@ -76,9 +83,33 @@ header {
 
 // Work page
 .work-section {
-	.work-card {
+	.work-card, .work-card-bg {
 		height: 0;
 		padding-bottom: 100%;
 	}
+
+	.work-card-bg {
+		transition: all .25s ease;
+		
+	}
+
+	.work-card {
+		span {
+			opacity: 0;
+			&.active {
+				opacity: 1;
+			}
+			&.effect {
+				transition: opacity .05s linear;
+				&:nth-child(even) {
+					transition-delay: .3s;
+				}
+				&:nth-child(odd) {
+					transition-delay: .45s;
+				}
+			}
+		}
+	}
+
 }
 // Work ends

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import rabbit from '../public/rabbit.png'
+import Link from 'next/link'
 import { MdPhoneIphone, MdEmail, MdLocationOn } from 'react-icons/md';
 
 export default function Home() {
@@ -8,24 +9,35 @@ export default function Home() {
 	<>
 		<section className='hero-section h-screen relative flex flex-col justify-center'>
 			<div>
-					<h1 className='xl:text-8xl lg:text-7xl sm:text-4xl text-3xl 
-								bg-pink inline pr-5 sm:ml-20 ml-8 tracking-wider'
-					>
-						INTERIOR.FURNITURE
-					</h1>
+				<h1 className='xl:text-8xl lg:text-7xl sm:text-4xl text-3xl inline sm:ml-20 ml-8 tracking-wider'>
+					INTERIOR.FURNITURE
+				</h1>
 			</div>
 			<div className='mt-14'>
 				<div className='text-center'>
-					<button className='relative'>My WORK</button>
-				</div>	
+					<button className='relative'>
+						<Link href='/works'>
+							My WORK	
+						</Link>
+					</button>
+					<div className='absolute bottom-8 left-0 right-0 mx-auto w-4 leading-3 bg-yellow'>
+						<Link href='/#intro-section' className='flex flex-col items-center' scroll={false}>
+							<span>•</span>
+							<span>•</span>
+							<span>•</span>
+						</Link>
+					</div>	
+				</div>
 				<div className='absolute right-2 bottom-14 md:w-1/3 sm:w-1/2 w-2/3'>	
 					<span className='block text-sm'>Effectively bring artistically and business professional solutions to clients.</span>	
 					<span className='block text-sm'>Worked on individual projects and as well as collaborated with others as a team</span>	
-				</div>	
+				</div>
 			</div>	
 		</section>
 		<main>
-			<section className='md:text-5xl sm:text-3xl text-2xl md:mx-16 mx-5 leading-normal h-screen flex items-center'>
+			<section className='md:text-5xl sm:text-3xl text-2xl md:mx-16 mx-5 leading-normal h-screen flex items-center'
+				id='intro-section'	
+				>
 				<div className='leading-normal'>
 					<h3>
 						I focus on using effectively optimize the space to improving people's everyday lives in all aspects.
