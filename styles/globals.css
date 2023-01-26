@@ -3,15 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 html, body {
-  background-color: gray;
-  color: white;
   scroll-behavior: smooth;
-}
-
-.layout {
-  width: 100vw;
-  max-width: 1280px;
-  margin: auto;
 }
 
 h1, h2 {
@@ -39,12 +31,13 @@ h4 {
   font-weight: 500;
 }
 
-header {
-  max-width: 1280px;
-}
-header nav .icon {
+.icon {
   width: 36px;
   height: 36px;
+}
+
+header nav {
+  max-width: 1280px;
 }
 
 .hero-section button {
@@ -87,6 +80,10 @@ header nav .icon {
 }
 .work-section .work-card span.effect:nth-child(odd) {
   transition-delay: 0.45s;
+}
+
+.contact-section > div {
+  max-width: 1280px;
 }
 
 /*# sourceMappingURL=globals.css.map */

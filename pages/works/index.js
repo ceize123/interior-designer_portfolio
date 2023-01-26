@@ -32,7 +32,7 @@ export default function Works({ works }) {
 						)
 					})}
 				</div>	
-			</section>
+			</section>	
 		</main>
 	</>
 	)

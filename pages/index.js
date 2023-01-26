@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import rabbit from '../public/rabbit.png'
 import Link from 'next/link'
-import { MdPhoneIphone, MdEmail, MdLocationOn } from 'react-icons/md';
+import PersonalInfo from '../components/Personal-Info'
 
 export default function Home() {
 	return (
@@ -47,25 +47,16 @@ export default function Home() {
 					</h3>
 				</div>	
 			</section>	
-			<section className='py-10 about-section' id='about-section'>
+			<section className='pt-20 pb-12 about-section' id='about-section'>
 				<div className='flex flex-col items-center'>
 					<Image src={rabbit}
 							width={100}
 							height={100}
 							alt='rabbit' />
 					<div className='flex mt-12 sm:flex-row flex-col'>
-						<div className='mx-5 mb-1 sm:mb-0 flex items-center'>
-							<MdPhoneIphone / >
-							<p className='ml-1'>(437) 97101353</p>
-						</div>
-						<div className='mx-5 mb-1 sm:mb-0 flex items-center'>
-							<MdEmail />
-							<p className='ml-1'>ann1212123@gmail.com</p>
-						</div>
-						<div className='mx-5 flex items-center'>
-							<MdLocationOn />	
-							<p className='ml-1'>Toronto,ON</p>
-						</div>	
+						<PersonalInfo type='Phone' />	
+						<PersonalInfo type='Email' />	
+						<PersonalInfo type='Location' />	
 					</div>
 				</div>
 				<div className='mt-12'>
@@ -137,9 +128,6 @@ export default function Home() {
 				</div>
 			</section>
 		</main>
-		<footer className='bg-black text-center sm:py-12 py-6 px-2'>
-			<p>All work © Jhiih-Yuan (Ann) Tseng 2022.  Please do not distribute images without permission.</p>
-		</footer>
 	</>
 	)
 }
