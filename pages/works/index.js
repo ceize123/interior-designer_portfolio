@@ -22,7 +22,7 @@ export default function Works({ works }) {
 	return (
 	<>
 		<main className='mt-20'>
-			<section className='work-section'>
+			<section className='work-section my-5'>
 				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-8 sm:mx-4 mx-8'>
 					{works.map((work) => {
 						return (
