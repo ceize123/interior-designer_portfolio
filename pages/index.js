@@ -54,9 +54,9 @@ export default function Home() {
 							height={100}
 							alt='rabbit' />
 					<div className='flex mt-12 sm:flex-row flex-col'>
-						<PersonalInfo type='Phone' info='(437) 97101353' />	
-						<PersonalInfo type='Email' info='ann1212123@gmail.com' />	
-						<PersonalInfo type='Location' info='Toronto, ON' />	
+						<PersonalInfo type='Phone' />	
+						<PersonalInfo type='Email' />	
+						<PersonalInfo type='Location' />	
 					</div>
 				</div>
 				<div className='mt-12'>

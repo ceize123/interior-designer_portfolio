@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Links from '../components/Links'
+import Contact from '../components/Contact'
 import { useRouter } from 'next/router'
 
 export default function App({ Component, pageProps }) {
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
 					<Links />
 				</div>
 			</div>
+			{router.route !== '/' && <Contact />}
 			<Footer />
 		</div>
 	)

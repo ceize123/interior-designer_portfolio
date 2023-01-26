@@ -1,6 +1,7 @@
 import { createClient } from 'contentful'
 import Image from 'next/image'
 import Skeleton from '../../components/Skeleton'
+import Contact from '../../components/Contact'
 
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE_ID, // id
@@ -61,6 +62,7 @@ export default function WorkDetails({ work }) {
 			height={thumbnail.fields.file.details.image.height}
 			alt={thumbnail.fields.title}
 		/>
+		<Contact />	
 	</main>
 	)
 }
