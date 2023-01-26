@@ -7,6 +7,7 @@
 html, body {
 	background-color: gray;
 	color: white;
+	scroll-behavior: smooth;
 }
 
 .layout {
@@ -99,12 +100,12 @@ header {
 				opacity: 1;
 			}
 			&.effect {
-				transition: opacity .4s ease;
+				transition: opacity .05s linear;
 				&:nth-child(even) {
-					transition-delay: .2s;
+					transition-delay: .3s;
 				}
 				&:nth-child(odd) {
-					transition-delay: .3s;
+					transition-delay: .45s;
 				}
 			}
 		}
