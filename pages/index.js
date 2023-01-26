@@ -47,7 +47,7 @@ export default function Home() {
 					</h3>
 				</div>	
 			</section>	
-			<section className='py-10 about-section' id='about-section'>
+			<section className='pt-20 pb-12 about-section' id='about-section'>
 				<div className='flex flex-col items-center'>
 					<Image src={rabbit}
 							width={100}
