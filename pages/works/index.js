@@ -20,16 +20,15 @@ export async function getStaticProps() {
 
 export default function Works({ works }) {
 	if (!works) return <Skeleton />
-	console.log(works)
 	return (
 	<>
 		<main className='mt-14 border-x-2 border-light-gray'>
 			<section className='work-section py-10'>
 				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-10 sm:mx-12 mx-8'>
-					{works.map((work) => {
+					{works.map((work, idx) => {
 						return (
 							<div key={work.sys.id}>
-								<Card work={work.fields} />
+								<Card work={work.fields} num={idx} />
 							</div>
 						)
 					})}
