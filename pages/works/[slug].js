@@ -80,8 +80,10 @@ export default function WorkDetails({ work }) {
 	return (
 	<main className='mt-14 border-x-2 border-light-gray px-14'>
 		<section className='banner flex justify-center md:py-20 py-12'>
-				<div className='max-w-4xl w-full' data-aos='fade-up'>
+			<div className='max-w-4xl w-full'>
+				<div data-aos='fade-up'>
 					<ImageTemp data={banner} />
+				</div>	
 				<div className='ml-5 mb-6'>
 					<h3 className='text-3xl mt-5'>{title}</h3>
 					<h4 className='text-1xl mt-2 text-light-gray'>{year}</h4>
