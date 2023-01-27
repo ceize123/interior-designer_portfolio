@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import ImageTemp from './Image-Temp'
 import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Drawing({ ary, aryIdx }) {
 	useEffect(() => {
@@ -9,7 +9,7 @@ export default function Drawing({ ary, aryIdx }) {
 			offset: 150,
 			duration : 1000
 		});
-	}, []);
+	}, [])
 	return (
 		ary.map((item, idx) => {
 			return (
@@ -22,18 +22,8 @@ export default function Drawing({ ary, aryIdx }) {
 							<p className='font-bold leading-10 md:text-lg text-sm '>{item.fields.description}</p>
 						</div>
 					}
-					<div className={`
-							${idx % 2 === 0 ? 'col-span-4' : 'col-span-5'}`
-					}>
-						<Image
-							src={`https:${item.fields.file.url}`}
-							width='0'
-							height='0'
-							sizes='100vw'
-							className='w-full h-auto'
-							alt={item.fields.title}
-							data-aos='fade-up'
-						/>
+					<div className={`${idx % 2 === 0 ? 'col-span-4' : 'col-span-5'}`} data-aos='fade-up'>
+						<ImageTemp data={item} />
 					</div>
 				</div>
 			)
