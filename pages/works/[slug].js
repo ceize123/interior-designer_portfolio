@@ -53,11 +53,13 @@ export async function getStaticProps({params}) {
 
 export default function WorkDetails({ work }) {
 	useEffect(() => {
-		AOS.init({
-			offset: 150,
-			duration : 1000
-		});
-	}, [])
+		setTimeout(() => {
+			AOS.init({
+				offset: 150,
+				duration : 1000
+			});
+		}, 3000)
+	}, [work])
 	if (!work) return <Skeleton />
 
 	const { title, banner, year, overview, sketches } = work.fields
