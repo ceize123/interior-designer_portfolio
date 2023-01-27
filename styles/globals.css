@@ -36,10 +36,6 @@ h4 {
   height: 36px;
 }
 
-header nav {
-  max-width: 1280px;
-}
-
 .hero-section button {
   z-index: 1;
 }
@@ -80,10 +76,6 @@ header nav {
 }
 .work-section .work-card span.effect:nth-child(odd) {
   transition-delay: 0.45s;
-}
-
-.contact-section > div {
-  max-width: 1280px;
 }
 
 /*# sourceMappingURL=globals.css.map */

@@ -1,6 +1,11 @@
 import { createClient } from 'contentful'
 import Image from 'next/image'
 import Skeleton from '../../components/Skeleton'
+import Drawing from '../../components/Drawing-Sec'
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ImageTemp from '../../components/Image-Temp'
 
 const client = createClient({
 	space: process.env.CONTENTFUL_SPACE_ID, // id
@@ -50,17 +55,82 @@ export async function getStaticProps({params}) {
 export default function WorkDetails({ work }) {
 	if (!work) return <Skeleton />
 
-	const { title, thumbnail } = work.fields
-	console.log(work)
+	const { title, banner, year, overview, sketches } = work.fields
+	const sketchDrawings = sketches.slice(1)
+	let secAry = []
+
+	const getSections = (data) => {
+		const ary = Object.keys(data)
+		for (const item of ary) {
+			if (/sec.*Drawing/i.test(item)) {
+				secAry.push(data[item])
+			}
+		}
+	}
+	getSections(work.fields)
+
+	console.log(work.fields)
 	return (
-	<main className='mt-14 border-x-2 border-light-gray'>
-		<p>{title}</p>
-		<Image
-			src={`https:${thumbnail.fields.file.url}`}
-			width={thumbnail.fields.file.details.image.width}	
-			height={thumbnail.fields.file.details.image.height}
-			alt={thumbnail.fields.title}
-		/>
+	<main className='mt-14 border-x-2 border-light-gray px-14'>
+		<section className='banner flex justify-center md:py-20 py-12'>
+				<div className='max-w-4xl w-full'>
+					<ImageTemp data={banner} />
+				{/* <Image
+					src={`https:${banner.fields.file.url}`}
+					width='0'
+					height='0'
+					sizes='100vw'
+					className='w-full h-auto'
+					alt={banner.fields.title}
+					data-aos="fade-up"
+				/> */}
+				<div className='ml-5 mb-6'>
+					<h3 className='text-3xl mt-5'>{title}</h3>
+					<h4 className='text-1xl mt-2 text-light-gray'>{year}</h4>
+				</div>
+				<p className='font-bold leading-8'>{overview}</p>	
+			</div>	
+		</section>
+		<section className='md:py-20 py-12'>
+			<div className='md:grid md:grid-cols-8 md:gap-2 flex flex-col'>
+				<div className='md:col-span-5'>
+					<Image
+						src={`https:${sketches[0].fields.file.url}`}
+						width='0'
+						height='0'
+						sizes='100vw'
+						className='w-full h-auto'
+						alt={sketches[0].fields.title}
+						data-aos='fade-up'
+					/>
+					<p className='font-bold leading-8 md:w-2/3'>{sketches[0].fields.description}</p>	
+				</div>
+				<div className='lg:col-span-2 md:col-span-3 md:self-center flex justify-center md:block' data-aos='fade-up'>
+					{sketchDrawings.map((item, idx) => {
+						return (
+							<Image
+								key={idx}
+								src={`https:${item.fields.file.url}`}
+								width='0'
+								height='0'
+								sizes='100vw'
+								className='md:w-full h-auto w-1/3'
+								alt={item.fields.title}
+							/>
+						)
+					})}
+				</div>	
+			</div>	
+		</section>
+		<section className='md:py-20 py-12'>
+			{secAry.map((item, idx) => {
+				return (
+					<div key={idx} className='mt-16'>
+						<Drawing ary={item} aryIdx={idx} />
+					</div>
+				)	
+			})}	
+		</section>	
 	</main>
 	)
 }
