@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-export default function Card({ work }) {
+export default function Card({ work, num }) {
 	const [active, setActive] = useState(false)
 	const { slug, thumbnail, title } = work
 	const strings = title.split('')
@@ -24,6 +24,7 @@ export default function Card({ work }) {
 				onMouseEnter={() => setActive(false)}
 				onMouseLeave={() => setActive(true)}
 				data-aos='fade-up'
+				data-aos-delay={50 * num}
 			>
 				<div className={`work-card-bg w-full ${!active ? 'scale-105' : ''}`}
 					style={{background: `url(https:${thumbnail.fields.file.url}) 
