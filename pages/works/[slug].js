@@ -91,8 +91,10 @@ export default function WorkDetails({ work }) {
 		</section>
 		<section className='md:py-20 py-12'>
 			<div className='md:grid md:grid-cols-8 md:gap-2 flex flex-col'>
-				<div className='md:col-span-5' data-aos='fade-up'>
-					<ImageTemp data={sketches[0]} />
+				<div className='md:col-span-5'>
+					<div data-aos='fade-up'>
+						<ImageTemp data={sketches[0]} />
+					</div>	
 					<p className='font-bold leading-8 md:w-2/3'>{sketches[0].fields.description}</p>	
 				</div>
 				<div className='lg:col-span-2 md:col-span-3 md:self-center flex justify-center md:block' data-aos='fade-up'>
