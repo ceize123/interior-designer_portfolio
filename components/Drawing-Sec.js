@@ -5,11 +5,13 @@ import 'aos/dist/aos.css'
 
 export default function Drawing({ ary, aryIdx }) {
 	useEffect(() => {
-		AOS.init({
-			offset: 150,
-			duration : 1000
-		});
-	}, [])
+		setTimeout(() => {
+			AOS.init({
+				offset: 150,
+				duration : 1000
+			});
+		}, 3000)
+	}, [ary])
 	return (
 		ary.map((item, idx) => {
 			return (
