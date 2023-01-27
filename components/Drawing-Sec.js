@@ -9,8 +9,8 @@ export default function Drawing({ ary, aryIdx }) {
 			AOS.init({
 				offset: 150,
 				duration : 1000
-			});
-		}, 3000)
+			})
+		}, 1500)
 	}, [ary])
 	return (
 		ary.map((item, idx) => {

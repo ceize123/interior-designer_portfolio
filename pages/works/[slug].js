@@ -57,8 +57,8 @@ export default function WorkDetails({ work }) {
 			AOS.init({
 				offset: 150,
 				duration : 1000
-			});
-		}, 3000)
+			})
+		}, 1500)
 	}, [work])
 	if (!work) return <Skeleton />
 
