@@ -113,7 +113,7 @@ export default function WorkDetails({ work }) {
 		<section className='md:pb-20 pb-10'>
 			{secAry.map((item, idx) => {
 				return (
-					<div key={idx} className='mt-20 pb-6'>
+					<div key={idx} className='mt-20 md:pb-6 pb-2'>
 						<Drawing ary={item} aryIdx={idx} />
 					</div>
 				)	
