@@ -110,10 +110,10 @@ export default function WorkDetails({ work }) {
 				</div>	
 			</div>	
 		</section>
-		<section className='md:py-20 py-12'>
+		<section className='md:pb-20 pb-10'>
 			{secAry.map((item, idx) => {
 				return (
-					<div key={idx} className='mt-16'>
+					<div key={idx} className='mt-20 pb-6'>
 						<Drawing ary={item} aryIdx={idx} />
 					</div>
 				)	
