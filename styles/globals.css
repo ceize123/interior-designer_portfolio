@@ -60,7 +60,7 @@ h4 {
   padding-bottom: 100%;
 }
 .work-section .work-card-bg {
-  transition: all 0.25s ease;
+  transition: all 0.6s ease-out;
 }
 .work-section .work-card span {
   opacity: 0;

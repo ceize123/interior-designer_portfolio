@@ -26,7 +26,7 @@ export default function Card({ work, num }) {
 				data-aos='fade-up'
 				data-aos-delay={50 * num}
 			>
-				<div className={`work-card-bg w-full ${!active ? 'scale-105' : ''}`}
+				<div className={`work-card-bg w-full ${!active ? 'scale-110' : ''}`}
 					style={{background: `url(https:${thumbnail.fields.file.url}) 
 							no-repeat center center / cover `}}
 				>
