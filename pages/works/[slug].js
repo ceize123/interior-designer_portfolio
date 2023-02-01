@@ -78,8 +78,8 @@ export default function WorkDetails({ work }) {
 
 	console.log(work.fields)
 	return (
-	<main className='mt-14 border-x-2 border-light-gray px-14'>
-		<section className='banner flex justify-center md:py-20 py-12'>
+	<main className='px-14'>
+		<section className='banner flex justify-center md:py-24 py-16'>
 			<div className='max-w-4xl w-full'>
 				<div data-aos='fade-up'>
 					<ImageTemp data={banner} />
@@ -91,7 +91,7 @@ export default function WorkDetails({ work }) {
 				<p className='font-bold leading-8'>{overview}</p>	
 			</div>	
 		</section>
-		<section className='md:py-20 py-12'>
+		<section className='md:py-20 py-12 min-h-screen'>
 			<div className='md:grid md:grid-cols-8 md:gap-2 flex flex-col'>
 				<div className='md:col-span-5'>
 					<div data-aos='fade-up'>
@@ -110,10 +110,10 @@ export default function WorkDetails({ work }) {
 				</div>	
 			</div>	
 		</section>
-		<section className='md:pb-20 pb-10'>
+		<section className='md:pb-20 pb-12'>
 			{secAry.map((item, idx) => {
 				return (
-					<div key={idx} className='mt-20 md:pb-6 pb-2'>
+					<div key={idx} className='mt-20 md:pb-20 pb-8' data-aos='fade-up'>
 						<Drawing ary={item} aryIdx={idx} />
 					</div>
 				)	

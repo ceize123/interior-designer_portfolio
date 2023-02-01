@@ -22,7 +22,7 @@ export default function Works({ works }) {
 	if (!works) return <Skeleton />
 	return (
 	<>
-		<main className='mt-14 border-x-2 border-light-gray'>
+		<main>
 			<section className='work-section py-10'>
 				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-10 sm:mx-12 mx-8'>
 					{works.map((work, idx) => {
