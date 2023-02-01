@@ -7,15 +7,15 @@ import PersonalInfo from '../components/Personal-Info'
 export default function Home() {
 	return (
 	<>
-		<section className='hero-section h-screen relative flex flex-col justify-center'>
+		<section className='hero-section h-screen relative flex flex-col justify-center -mt-14'>
 			<div>
-				<h1 className='xl:text-8xl lg:text-7xl sm:text-4xl text-3xl inline sm:ml-20 ml-8 tracking-wider'>
+				<h1 className='xl:text-8xl lg:text-7xl sm:text-4xl text-3xl inline sm:ml-20 ml-4 tracking-wider'>
 					INTERIOR.FURNITURE
 				</h1>
 			</div>
 			<div className='mt-14'>
 				<div className='text-center'>
-					<button className='relative'>
+					<button className='relative after:bg-yellow'>
 						<Link href='/works'>
 							My WORK	
 						</Link>

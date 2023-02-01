@@ -31,7 +31,7 @@ export default function Card({ work, num }) {
 							no-repeat center center / cover `}}
 				>
 				</div>
-				<div className={`text-black lg:text-5xl text-4xl 
+				<div className={`text-yellow lg:text-5xl text-4xl 
 								absolute pl-5 w-1/2 sm:bottom-7 bottom-3
 				`}>
 					<h2>

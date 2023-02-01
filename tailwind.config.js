@@ -5,7 +5,7 @@ content: ['./pages/**/*.{js,jsx,ts,tsx}',
 theme: {
 	colors: {
 		'pink': '#f4cccc',
-		'yellow': '#eeee44',
+		'yellow': '#fec20e',
 		'black': '#000',
 		'gray': '#222',
 		'light-gray': '#555',
