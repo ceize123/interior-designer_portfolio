@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Links from '../components/Links'
 import { useRouter } from 'next/router'
 
 export default function App({ Component, pageProps }) {
@@ -12,11 +11,6 @@ export default function App({ Component, pageProps }) {
 			<Navbar />
 			<div className='container mx-auto'>
 				<Component {...pageProps} />
-				<div className={`flex justify-end pr-4 py-6 text-gray 
-					${router.route !== '/' ? 'border-x-2 border-light-gray' : ''}`}
-				>
-					<Links />
-				</div>
 			</div>
 			<Footer />
 		</div>

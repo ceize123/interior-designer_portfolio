@@ -15,7 +15,7 @@ export default function Home() {
 			</div>
 			<div className='mt-14'>
 				<div className='text-center'>
-					<button className='relative'>
+					<button className='relative after:bg-yellow'>
 						<Link href='/works'>
 							My WORK	
 						</Link>
