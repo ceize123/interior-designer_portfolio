@@ -79,9 +79,9 @@ export default function WorkDetails({ work }) {
 	console.log(work.fields)
 	return (
 	<main className='px-14'>
-		<section className='banner flex justify-center md:py-24 py-16'>
-			<div className='max-w-4xl w-full'>
-				<div data-aos='fade-up'>
+		<section className='banner flex justify-center md:py-24 py-16 min-h-screen'>
+			<div className='max-w-4xl w-full' data-aos='fade-up'>
+				<div>
 					<ImageTemp data={banner} />
 				</div>	
 				<div className='ml-5 mb-6'>
@@ -92,17 +92,17 @@ export default function WorkDetails({ work }) {
 			</div>	
 		</section>
 		<section className='md:py-20 py-12 min-h-screen'>
-			<div className='md:grid md:grid-cols-8 md:gap-2 flex flex-col'>
+			<div className='md:grid md:grid-cols-8 md:gap-2 flex flex-col' data-aos='fade-up'>
 				<div className='md:col-span-5'>
-					<div data-aos='fade-up'>
+					<div>
 						<ImageTemp data={sketches[0]} />
 					</div>	
 					<p className='font-bold leading-8 md:w-2/3'>{sketches[0].fields.description}</p>	
 				</div>
-				<div className='lg:col-span-2 md:col-span-3 md:self-center flex justify-center md:block' data-aos='fade-up'>
+				<div className='lg:col-span-2 md:col-span-3 md:self-center flex justify-center md:block'>
 					{sketchDrawings.map((item, idx) => {
 						return (
-							<div key={idx} className='md:w-full w-1/3' data-aos='fade-up'>
+							<div key={idx} className='md:w-full w-1/3'>
 								<ImageTemp data={item} />
 							</div>
 						)
