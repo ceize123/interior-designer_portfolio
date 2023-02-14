@@ -25,7 +25,7 @@ export default function Works({ works }) {
 		<main>
 			<section className='work-section py-10'>
 				<div className='grid md:grid-cols-3 sm:grid-cols-2 gap-10 sm:mx-12 mx-8'>
-					{works.map((work, idx) => {
+					{works !== undefined && works.map((work, idx) => {
 						return (
 							<div key={work.sys.id}>
 								<Card work={work.fields} num={idx} />
