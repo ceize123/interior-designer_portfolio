@@ -39,7 +39,7 @@ export default function Card({ work, num }) {
 							return <span key={index} className={`${active && 'active effect'}`}>{char}</span>
 						})}
 					</h2>
-				</div>
+				</div> 
 			</div>
 		</Link>
 	) 
