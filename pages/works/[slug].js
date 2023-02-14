@@ -76,7 +76,6 @@ export default function WorkDetails({ work }) {
 	}
 	getSections(work.fields)
 
-	console.log(work.fields)
 	return (
 	<main className='px-14'>
 		<section className='banner flex justify-center md:py-24 py-16 min-h-screen'>
