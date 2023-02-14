@@ -42,5 +42,5 @@ export default function Card({ work, num }) {
 				</div>
 			</div>
 		</Link>
-	)
+	) 
 }
