@@ -4,42 +4,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Lexend+Exa:wght@500&family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap');
 
 // General starts
-html, body {
-	scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 // font
-h1, h2 {
-	font-family: 'Cormorant Infant', serif;
-	font-weight: 500;
+h1,
+h2 {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 500;
 }
 
-span, header li, .about-section li {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
+span,
+header li,
+.about-section li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
-h3, .about-section p {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+h3,
+.about-section p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 h4 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 .work-section span {
-	font-family: 'Lexend Exa', sans-serif;
-	font-weight: 500;
+  font-family: 'Lexend Exa', sans-serif;
+  font-weight: 500;
 }
 // font
 
 .icon {
-	width: 36px;
-	height: 36px;
+  width: 36px;
+  height: 36px;
 }
-
 
 // General ends
 
@@ -48,56 +52,55 @@ h4 {
 
 // Main starts
 .hero-section {
-	button {
-		z-index: 1;
-		&::after {
-			content: "";
-			transition: all .2s ease-in-out;
-			position: absolute;
-			top: 7px;
-			left: 5px;
-			width: 100%;
-			height: 70%;
-			z-index: -1;
-			
-		}
-		&:hover::after {
-			top: 4px;
-			left: 0;
-		}
-	}
+  button {
+    z-index: 1;
+    &::after {
+      content: '';
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      top: 7px;
+      left: 5px;
+      width: 100%;
+      height: 70%;
+      z-index: -1;
+    }
+    &:hover::after {
+      top: 4px;
+      left: 0;
+    }
+  }
 }
+
 // Main ends
 
 // Work page
 .work-section {
-	.work-card, .work-card-bg {
-		height: 0;
-		padding-bottom: 100%;
-	}
+  .work-card,
+  .work-card-bg {
+    height: 0;
+    padding-bottom: 100%;
+  }
 
-	.work-card-bg {
-		transition: all .6s ease-out;
-		
-	}
+  .work-card-bg {
+    transition: all 0.6s ease-out;
+  }
 
-	.work-card {
-		span {
-			opacity: 0;
-			&.active {
-				opacity: 1;
-			}
-			&.effect {
-				transition: opacity .05s linear;
-				&:nth-child(even) {
-					transition-delay: .3s;
-				}
-				&:nth-child(odd) {
-					transition-delay: .45s;
-				}
-			}
-		}
-	}
-
+  .work-card {
+    span {
+      opacity: 0;
+      &.active {
+        opacity: 1;
+      }
+      &.effect {
+        transition: opacity 0.05s linear;
+        &:nth-child(even) {
+          transition-delay: 0.3s;
+        }
+        &:nth-child(odd) {
+          transition-delay: 0.45s;
+        }
+      }
+    }
+  }
 }
 // Work ends
